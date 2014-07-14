@@ -27,6 +27,10 @@ plt.show()
 dirName = 'C:\Users\Owner\Documents\Git\gettingstarted'
 fileName = 'sampledata.dat'
 
+if not os.path.exists(dirName):
+    os.makedirt(dirName)
+# makes the folder if it does not exist
+
 dataList = list()
 [dataList.append([x[i],y[i],z[i]]) for i in range(len(x))]
 
