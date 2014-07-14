@@ -16,12 +16,15 @@ plt.figure()
 font = {'family': 'Times New Roman', 'size':20}
 
 plt.rc('font', **font)
-plt.plot(x,y,'.')
-plt.plot(x,z,'x')
+plt.plot(x,y,'.', label='y values')
+plt.plot(x,z,'x', label='x values')
 # 3rd number in range will pick your markers for a plot
 plt.title('x**2 with noise')
 plt.ylabel('y (height)')
 plt.xlabel('x (sec)')
+plt.legend(loc='best')
+plt.xlim(0,10)
+plt.ylim(0,110)
 plt.show()
 
 dirName = 'C:\Users\Owner\Documents\Git\gettingstarted'
