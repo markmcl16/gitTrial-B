@@ -23,7 +23,7 @@ with open(os.path.join(dirName,fileName), 'r') as csvfile:
         data.append(row)
    
 data.pop(0)
-# an open colon at end of 0 would mean mean take data from 0, until very end
+# if 0 was 1, an open colon after 1 would mean mean take data from 1, until very end
      
 print data
 
